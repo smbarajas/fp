@@ -1,0 +1,149 @@
+/* BIG STYLES */
+html {
+    background:#000;
+}
+div.bg {
+    height:527px;
+    width:605px;
+    position:fixed;
+    bottom:0;
+    right:0;
+    z-index:-1;
+}
+div.wrapper {
+    padding-bottom:1em;
+    font-family:'Book Antiqua', 'Cambria';
+    max-width:800px;
+    margin:auto;
+    overflow:auto;
+    color:#000;
+    background-color:rgb(255, 255, 255);
+    border-radius:5px;
+}
+
+div.header{
+    padding: 2%;
+}
+header h1 {
+    font-variant:small-caps;
+    margin:0;
+    padding:0.75em;
+}
+nav.desktop {
+    color:#000;
+    font-size:40px;
+    font-family:'Book Antiqua', 'Cambria';
+    text-align:center;
+    margin:auto;
+    border-bottom:3px solid #000;
+    padding-top:3%;
+}
+nav.mobile {
+    display:none;
+}
+nav.products {
+    margin:10px auto;
+    padding:10px;
+    text-align:center;
+}
+a.contactLink,a.productLink,a.homeLink,nav.products {
+    color:#000;
+}
+a:hover {
+    color:rgb(142, 98, 172);
+}
+img.socialMedia {
+    padding:0 10px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+img.socialMedia:hover {
+    opacity:0.5;
+    fill:rgb(0, 0, 0);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+h2,h3 {
+    font-variant:small-caps;
+}
+div.section {
+    margin:auto;
+    padding:0 20px;
+    text-align:center;
+}
+
+div.product {
+    display:flex;
+    justify-content:center;
+}
+figure {
+    margin:0 20px;
+    padding:10px 20px;
+}
+figcaption {
+    text-align:center;
+    font-variant:small-caps; 
+}
+div.contact {
+    margin:auto;
+    padding:0 20px;
+}
+div.footer {
+    text-align:center;
+    float:none;
+}
+@media all and (max-width:500px) {
+    html {
+        background-image:none;
+    }
+    .header img {
+        width: 80%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    div.contact {
+        margin:auto;
+        padding:0;
+        padding-left:3px;
+    }
+    h1 {
+        text-align:center;
+    }
+    nav.desktop {
+        display:none;
+    }
+    nav.mobile {
+        display:block;
+        font-size:2em;
+        color:#000;
+        font-family:'Book Antiqua', 'Cambria';
+        text-align:center;
+        margin:auto;
+        border-bottom:3px solid #000;
+    }
+    nav.products {
+        margin:auto;
+        text-align:center;
+        width:50%;
+    }
+    div.section {
+        margin:auto;
+        padding:0;
+        text-align:center;
+    }
+    div.product {
+        display:block;
+        text-align:center;
+    }
+    .banner {
+        margin:auto;
+        width:80%;
+    }
+}
